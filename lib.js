@@ -49,6 +49,7 @@ exports.init = (options) => {
         'test/index.html',
         'test/server.js',
         'src/index.js',
+        'src/common.js',
         'dist/index.html',
         'dist/index.css',
     ].forEach(fileName => {
