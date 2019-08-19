@@ -1,0 +1,32 @@
+{
+  "name": "create-x-app",
+  "version": "0.1.0",
+  "description": "Create a development environment for your `super-x` app.",
+  "main": "lib.js",
+  "bin": "index.js",
+  "scripts": {
+    "test": "rm -r test & node index demo -d test",
+    "help": "node index -h"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huang2002/create-x-app.git"
+  },
+  "keywords": [
+    "super-x",
+    "init"
+  ],
+  "author": "3h",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huang2002/create-x-app/issues"
+  },
+  "homepage": "https://github.com/huang2002/create-x-app#readme",
+  "dependencies": {
+    "3h-cli": "^1.5.0"
+  },
+  "devDependencies": {
+    "3h-serve": "^0.6.2",
+    "@types/node": "^12.7.2"
+  }
+}
