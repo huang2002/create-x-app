@@ -2,18 +2,18 @@
     "name": "$appName$",
     "version": "0.1.0",
     "scripts": {
-        "start": "3h-serve dist -p $port$",
+        "start": "node dist/server",
         "test": "node test/server",
         "build": "rollup -c",
         "typecheck": "tsc"
     },
     "devDependencies": {
         "super-x": "$libVersion$",
-        "3h-serve": "^0.6.0",
-        "typescript": "^3.5.0",
-        "rollup": "^1.19.0",
-        "@babel/core": "^7.5.0",
-        "@babel/preset-env": "^7.5.0",
+        "herver": "^0.2.0",
+        "typescript": "^3.7.0",
+        "rollup": "^1.28.0",
+        "@babel/core": "^7.7.0",
+        "@babel/preset-env": "^7.7.0",
         "rollup-plugin-babel": "^4.3.0",
         "rollup-plugin-terser": "^5.1.0"
     }

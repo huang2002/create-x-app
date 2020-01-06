@@ -20,6 +20,6 @@ export default {
     ],
     output: {
         format: 'iife',
-        file: 'dist/index.js'
+        file: 'dist/public/index.js'
     }
 };

@@ -39,24 +39,23 @@ const cli = CLI.create({
         `Default: ${DEFAULT_PORT}`
 }).on('exec', args => {
     if (args.has('h')) {
-        cli.help();
-    } else {
-        (async () => {
-            if (!args.has('name')) {
-                cli.help();
-                console.log();
-                throw "Missing app name!";
-            }
-            const appName = args.get('name')[0];
-            init({
-                dirName: args.has('d') ? args.get('d')[0] : appName,
-                appName,
-                libVersion: args.has('v') ? args.get('v')[0] : await getLatestVersion(),
-                port: args.has('p') ? args.get('p')[0] : DEFAULT_PORT,
-            });
-        })().catch(error => {
-            log(`An error occurred: ${error}`);
-            process.exit(1);
-        });
+        return cli.help();
     }
+    (async () => {
+        if (!args.has('name')) {
+            cli.help();
+            console.log();
+            throw "Missing app name!";
+        }
+        const appName = args.get('name')[0];
+        init({
+            dirName: args.has('d') ? args.get('d')[0] : appName,
+            appName,
+            libVersion: args.has('v') ? args.get('v')[0] : await getLatestVersion(),
+            port: args.has('p') ? args.get('p')[0] : DEFAULT_PORT,
+        });
+    })().catch(error => {
+        log(`An error occurred: ${error}`);
+        process.exit(1);
+    });
 }).exec(process.argv);

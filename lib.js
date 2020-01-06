@@ -39,7 +39,7 @@ exports.init = (options) => {
     log('Making directories...');
     mkdirSync(dirName);
     process.chdir(dirName);
-    ['src', 'test', 'dist'].forEach(dir => mkdirSync(dir));
+    ['src', 'test', 'dist', 'dist/public'].forEach(dir => mkdirSync(dir));
 
     log('Generating files...');
     [
@@ -50,8 +50,9 @@ exports.init = (options) => {
         'test/server.js',
         'src/index.js',
         'src/common.js',
-        'dist/index.html',
-        'dist/index.css',
+        'dist/server.js',
+        'dist/public/index.html',
+        'dist/public/index.css',
     ].forEach(fileName => {
         generate(fileName, options);
     });
