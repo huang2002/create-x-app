@@ -26,8 +26,8 @@
         "3h-cli": "^1.5.0"
     },
     "devDependencies": {
-        "@types/node": "^12.7.2",
+        "@types/node": "^13.1.4",
         "herver": "^0.2.0",
-        "super-x": "^0.6.0"
+        "super-x": "^0.7.0"
     }
 }
