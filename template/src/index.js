@@ -1,4 +1,3 @@
-/// <reference types="super-x" />
 import { h } from "./common.js";
 
 document.body.appendChild(

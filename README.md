@@ -62,7 +62,6 @@ my-app/
 +-- package.json        Package declaration file
 +-- package-lock.json   Dependency lock file
 +-- rollup.config.js    Rollup config file
-`-- tsconfig.json       TypeScript config file
 ```
 
 ### Scripts
@@ -74,7 +73,6 @@ You can run any of the scripts by executing `npm run <script>` in the root of yo
 |   `start`   | Launch the production server.        |
 |   `test`    | Launch the development server.       |
 |   `build`   | Bundle the scripts for distribution. |
-| `typecheck` | Run type check. (Using TypeScript)   |
 
 ### Development
 
@@ -84,9 +82,7 @@ When you are developing your app, it is recommended to execute `npm test` to sta
 
 When you want to get the production version of your app, execute `npm run build` to bundle the scripts into `/dist/public/index.js`, which is a bundled and optimized version, and your app for production will be ready in `/dist/public`. Then, execute `npm start` to start the production server which serves `/dist/public` so that you can see the production result of your app in your browser.
 
-The development environment also provides type checking functionality so that the intellisense functionalities of your editor can work properly. Besides, you can execute `npm run typecheck` to do type checking manually and modify `/tsconfig.json` to customize your TypeScript settings. For more information about `TypeScript`, please visit its official website: [www.typescriptlang.org](https://www.typescriptlang.org).
-
-By the way, please note that only script files should be placed in the `src` folder and all other resource files are supposed be put in `/dist/public` and referenced relative to that folder. For instance, the page style file, `/dist/public/index.css`, is referenced in index pages as `./index.css`. Moreover, although the scripts are loaded as modules in the development server, you have to use the global variable `X` to access the APIs instead of importing them from the `super-x` module and you can refer to the initial code given to get an example.
+Please note that only script files should be placed in the `src` folder and all other resource files are supposed be put in `/dist/public` and referenced relative to that folder. For instance, the page style file, `/dist/public/index.css`, is referenced in index pages as `./index.css`. Moreover, although the scripts are loaded as modules in the development server, you have to use the global variable `X` to access the APIs instead of importing them from the `super-x` module and you can refer to the initial code given to get an example.
 
 ## Links
 

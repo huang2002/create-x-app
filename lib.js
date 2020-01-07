@@ -45,7 +45,6 @@ exports.init = (options) => {
     [
         'package.json',
         'rollup.config.js',
-        'tsconfig.json',
         'test/index.html',
         'test/server.js',
         'src/index.js',
