@@ -55,13 +55,13 @@ my-app/
 | `-- server.js         Production server
 +-- src/                Source code (some initial code is provided)
 | +-- common.js         Common utils
-| +-- index.js          The entry point of your app
+| `-- index.js          The entry point of your app
 +-- test/               Test folder
 | +-- index.html        The index page for development
 | `-- server.js         Development server
 +-- package.json        Package declaration file
 +-- package-lock.json   Dependency lock file
-+-- rollup.config.js    Rollup config file
+`-- rollup.config.js    Rollup config file
 ```
 
 ### Scripts
