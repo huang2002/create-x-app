@@ -1,3 +1,7 @@
+### 0.4.1 - 2020-01-10
+
+- Fix `README.md` format
+
 ## 0.4.0 - 2020-01-07
 
 - Remove TypeScript
