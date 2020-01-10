@@ -1,3 +1,7 @@
+### 0.4.2 - 2020-01-10
+
+- Add type reference
+
 ### 0.4.1 - 2020-01-10
 
 - Fix `README.md` format
